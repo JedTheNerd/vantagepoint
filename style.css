@@ -1,0 +1,123 @@
+/* Branding Variables */
+:root {
+  --color-navy: #1A365D;
+  --color-white: #FFFFFF;
+  --color-slate: #64748B;
+  --color-light-gray: #F8FAFC;
+  --color-trust-green: #059669;
+  --color-trust-green-hover: #047857;
+  --color-amber: #D97706;
+  --color-border: #E2E8F0;
+  --font-family: 'Inter', sans-serif;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-family);
+  color: var(--color-slate);
+  background-color: var(--color-white);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px; /* Focused squeeze page width */
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Typography */
+h1 {
+  color: var(--color-navy);
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.headline-context {
+  font-size: 24px;
+  color: var(--color-slate);
+  margin-bottom: 32px;
+}
+
+.subheadline {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.micro-cta {
+  display: block;
+  color: var(--color-amber);
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-trust-green);
+  color: white;
+  border: none;
+  padding: 18px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-trust-green-hover);
+}
+
+.full-width { width: 100%; }
+
+/* Benefit List (Checkmarks) */
+.benefit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefit-list li::before {
+  content: '✓';
+  color: #10B981;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(26, 54, 93, 0.85);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px; right: 15px;
+  background: none; border: none; font-size: 24px; cursor: pointer;
+}
+
+.disclaimer {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 80px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 20px;
+}
