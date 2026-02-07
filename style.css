@@ -121,3 +121,75 @@ h1 {
   border-top: 1px solid var(--color-border);
   padding-top: 20px;
 }
+
+
+/* Thank You Page Specifics */
+.hero-thanks {
+    text-align: center;
+    background: var(--color-light-gray);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--color-slate);
+    margin-bottom: 16px;
+    display: block;
+}
+
+/* USP Strip */
+.usp-strip {
+    background: var(--color-navy);
+    color: white;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.usp-grid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Comparison Table */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: 1px solid var(--color-border);
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+th {
+    background: var(--color-navy);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: var(--color-light-gray);
+}
+
+/* Friction Eliminator */
+.friction-eliminator {
+    font-size: 14px;
+    color: var(--color-slate);
+    margin-top: 12px;
+}
+
+.bg-light {
+    background-color: var(--color-light-gray);
+}
