@@ -3,26 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Performance Intervention</title>
+    <title>Why Blue Light Glasses Fail | Clinical Training</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="hero container">
-        <span class="micro-cta">Because you deserve peak cognitive clarity...</span>
-        <h1>Clinical Precision for High-Performance Professionals</h1>
-        <p>A medical intervention designed to reduce cognitive load and restore metabolic health.</p>
-        <button class="btn-primary" id="openModal">Get Started — Initial Assessment</button>
-    </section>
 
-    <div class="modal-overlay" id="modalOverlay">
+    <header class="hero container">
+        <span class="micro-cta">Because you deserve to work on screens without sacrificing your evenings to headaches.</span>
+        <h1>Why Your Blue Light Glasses Didn't Stop the Headaches</h1>
+        <p class="headline-context">(And What 120+ Digital Workers Did Instead)</p>
+        <p class="subheadline">A free training that reveals the real cause of screen-induced eye strain and the clinical solution most people never consider.</p>
+        
+        <button class="btn-primary trigger-modal">Yes, Send Me the Free Training</button>
+    </header>
+
+    <main class="container">
+        <section class="problem-statement">
+            <p>If you're still getting headaches even after buying blue light glasses...<br>
+            If your eyes feel "tight" or tired by 3 PM...<br>
+            If you're taking painkillers just to finish your workday...</p>
+            
+            <p><strong>You're not broken. And you're not imagining it.</strong></p>
+            <p>The truth is: Blue light isn't your real problem. Your eyes are doing something most people don't realize—and store-bought glasses can't fix it.</p>
+        </section>
+
+        <section class="benefits">
+            <h3>In this free training, you'll discover:</h3>
+            <ul class="benefit-list">
+                <li>Why blue light glasses only solve 10% of the problem, and what the other 90% actually is</li>
+                <li>The hidden visual workload that's exhausting your eyes (even when your screen is "clear")</li>
+                <li>Why your headaches start after work, not during, and what that pattern reveals</li>
+                <li>The 3 things store-bought glasses can't do (that your eyes desperately need)</li>
+                <li>What a proper visual ergonomics assessment actually measures, and why it changes everything</li>
+            </ul>
+            
+            <div class="cta-block">
+                <span class="micro-cta">Because you shouldn't have to guess why blue light glasses failed you or what actually works.</span>
+                <button class="btn-primary trigger-modal">I Want These Answers, Send the Training</button>
+            </div>
+        </section>
+
+        <section class="qualification">
+            <div class="who-is-this">
+                <h3>Who This Is For:</h3>
+                <ul>
+                    <li>Digital workers and remote professionals (6–12 hours/day)</li>
+                    <li>Those who already tried blue light glasses (and still hurt)</li>
+                    <li>Experience end-of-day headaches or eye fatigue</li>
+                </ul>
+            </div>
+            
+            <div class="cta-block">
+                <span class="micro-cta">Because you're ready for real answers, not another cheap fix.</span>
+                <button class="btn-primary trigger-modal">This Is Me — I'm Ready to Watch</button>
+            </div>
+        </section>
+
+        <section class="social-proof">
+            <div class="testimonial-card">
+                <p class="quote">"I thought blue light glasses were supposed to fix this. They didn't. This training explained why and what I actually needed."</p>
+                <p class="attribution">— Chidi O., Product Designer</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"I've been working on screens for 8 years. I wish I'd known this sooner."</p>
+                <p class="attribution">— Amaka T., Software Developer</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p class="disclaimer">This training is educational and does not replace medical advice. For eye health concerns, consult a licensed optometrist or ophthalmologist.</p>
+    </footer>
+
+    <div class="modal-overlay" id="modal">
         <div class="modal-container">
-            <h2 style="color: var(--color-navy); margin-bottom: 24px;">Request Access</h2>
-            <form id="leadForm">
-                <label for="email">Professional Email</label>
-                <input type="email" id="email" placeholder="name@company.com" required>
-                <button type="submit" class="btn-primary" style="width: 100%; margin-top: 20px;">Secure My Slot</button>
+            <button class="close-modal">&times;</button>
+            <h2>Get Instant Access to the Free Training</h2>
+            <p>Enter your details below. The video will be sent to your email and WhatsApp immediately.</p>
+            
+            <form class="lead-form">
+                <div class="form-group">
+                    <label>First Name*</label>
+                    <input type="text" placeholder="Your first name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address*</label>
+                    <input type="email" placeholder="name@company.com" required>
+                </div>
+                <div class="form-group">
+                    <label>WhatsApp Number*</label>
+                    <input type="tel" placeholder="+234..." required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Send Me the Training Now</button>
+                <p class="privacy-note">Your information is safe. We'll never spam you or share your details.</p>
             </form>
-            <p class="privacy-text">We value your privacy. Your data is encrypted and clinically handled.</p>
         </div>
     </div>
 
