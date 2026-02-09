@@ -1,0 +1,452 @@
+/* ============================================
+   Vantage Point Eye Clinic — Booking Page
+   booking-page.css (extends styles.css)
+   ============================================ */
+
+/* --- Booking Hero --- */
+.booking-hero {
+  padding: 48px 0 32px;
+  text-align: center;
+}
+
+.booking-hero .eyebrow {
+  margin-bottom: var(--space-xs);
+  color: var(--color-trust-green);
+  font-weight: 600;
+}
+
+.booking-hero h1 {
+  margin-bottom: 12px;
+}
+
+.booking-hero h2 {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* --- What Happens On This Call --- */
+.call-details {
+  padding: 0 0 48px;
+}
+
+.call-details-card {
+  background-color: var(--color-light-gray);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.call-details-card h3 {
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.call-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-md);
+}
+
+.call-details-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-slate);
+  margin-bottom: 14px;
+}
+
+.call-details-list li:last-child {
+  margin-bottom: 0;
+}
+
+.call-details-list li svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.call-details-list li strong {
+  color: var(--color-navy);
+  font-weight: 600;
+}
+
+.call-closing {
+  margin-top: var(--space-md);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.call-closing p {
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.call-closing p strong {
+  color: var(--color-navy);
+}
+
+/* --- Calendar Embed Section --- */
+.calendar-section {
+  padding: 48px 0;
+  background-color: var(--color-white);
+}
+
+.calendar-embed {
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 500px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Placeholder state shown until real embed replaces it */
+.calendar-placeholder {
+  text-align: center;
+  padding: var(--space-xl);
+  color: var(--color-slate);
+}
+
+.calendar-placeholder svg {
+  margin-bottom: var(--space-sm);
+  color: var(--color-border);
+}
+
+.calendar-placeholder p {
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.calendar-placeholder code {
+  font-size: 13px;
+  background-color: var(--color-white);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Make Calendly / TidyCal / Acuity iframes responsive */
+.calendar-embed iframe {
+  width: 100%;
+  min-height: 600px;
+  border: 0;
+}
+
+/* --- Post-Calendar Friction Eliminator --- */
+.post-calendar {
+  max-width: 700px;
+  margin: var(--space-lg) auto 0;
+}
+
+.post-calendar-card {
+  background-color: rgba(5, 150, 105, 0.06);
+  border: 1px solid rgba(5, 150, 105, 0.15);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.post-calendar-card h3 {
+  font-size: 16px;
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.expect-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expect-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-navy);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.expect-list li:last-child {
+  margin-bottom: 0;
+}
+
+.expect-list li .expect-icon {
+  flex-shrink: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.post-calendar-note {
+  text-align: center;
+  margin-top: var(--space-sm);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+/* --- Booking Testimonials --- */
+.booking-testimonials {
+  padding: 48px 0;
+  background-color: var(--color-light-gray);
+}
+
+.booking-testimonials .section-header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.booking-testimonials .section-header h2 {
+  color: var(--color-navy);
+  font-weight: 700;
+}
+
+.booking-testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* --- Booking FAQ --- */
+.booking-faq {
+  padding: 48px 0;
+}
+
+.booking-faq .section-header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.booking-faq .section-header h2 {
+  color: var(--color-navy);
+  font-weight: 700;
+}
+
+/* --- FAQ Accordion (self-contained for booking page) --- */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--color-light-gray);
+  border: none;
+  padding: 16px 20px;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-navy);
+  transition: background-color var(--transition-fast);
+  gap: 12px;
+}
+
+.faq-question:hover {
+  background-color: var(--color-border);
+}
+
+.faq-question:focus-visible {
+  outline: 3px solid rgba(5, 150, 105, 0.3);
+  outline-offset: -3px;
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  transition: transform var(--transition-medium);
+  color: var(--color-slate);
+}
+
+.faq-item.is-open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-answer-inner {
+  padding: 20px;
+  font-size: 15px;
+  color: var(--color-slate);
+  line-height: 1.7;
+  border-top: 1px solid var(--color-border);
+}
+
+/* --- Final Reassurance --- */
+.reassurance-section {
+  padding: 48px 0;
+  background-color: var(--color-light-gray);
+  text-align: center;
+}
+
+.reassurance-section h2 {
+  color: var(--color-navy);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.reassurance-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg) var(--space-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.reassurance-card p {
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.reassurance-card p + p {
+  margin-top: 16px;
+}
+
+.reassurance-card p strong {
+  color: var(--color-navy);
+  font-weight: 600;
+}
+
+.reassurance-card .reassurance-close {
+  margin-top: var(--space-md);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+  font-weight: 600;
+  color: var(--color-trust-green);
+  font-size: 17px;
+}
+
+/* --- Footer (inherits from styles.css .footer) --- */
+.footer-booking .footer-links {
+  margin-top: var(--space-sm);
+}
+
+.footer-booking .footer-links a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color var(--transition-fast);
+}
+
+.footer-booking .footer-links a:hover {
+  color: var(--color-success);
+  text-decoration: underline;
+}
+
+/* ============================================
+   Tablet (768px)
+   ============================================ */
+@media (min-width: 768px) {
+  .booking-hero {
+    padding: 60px 0 40px;
+  }
+
+  .call-details {
+    padding-bottom: 60px;
+  }
+
+  .call-details-card {
+    padding: var(--space-lg);
+  }
+
+  .call-details-list li {
+    font-size: 17px;
+  }
+
+  .calendar-section {
+    padding: 60px 0;
+  }
+
+  .booking-testimonials {
+    padding: 60px 0;
+  }
+
+  .booking-testimonials-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .booking-faq {
+    padding: 60px 0;
+  }
+
+  .reassurance-section {
+    padding: 60px 0;
+  }
+
+  .reassurance-card {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .reassurance-card p {
+    font-size: 18px;
+  }
+}
+
+/* ============================================
+   Desktop (1024px)
+   ============================================ */
+@media (min-width: 1024px) {
+  .booking-hero {
+    padding: 80px 0 48px;
+  }
+
+  .call-details {
+    padding-bottom: 0;
+  }
+
+  .call-details-list li {
+    font-size: 18px;
+  }
+
+  .calendar-section {
+    padding: 80px 0;
+  }
+
+  .booking-testimonials {
+    padding: 80px 0;
+  }
+
+  .booking-testimonials-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  .booking-faq {
+    padding: 80px 0;
+  }
+
+  .reassurance-section {
+    padding: 80px 0;
+  }
+}
