@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <title>You're Booked! | Vantage Point Eye Clinic</title>
+  <meta name="description" content="Your Visual Strain Clarity Call is confirmed. Here's what to expect next.">
+
+  <!-- [PLACEHOLDER] Replace with actual favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared design system -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* ============================================
+       Thank You Page — Specific Styles
+       ============================================ */
+
+    /* --- Success Callout --- */
+    .success-callout {
+      background-color: rgba(5, 150, 105, 0.08);
+      border: 1px solid rgba(5, 150, 105, 0.2);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 600px;
+      margin: 0 auto var(--space-lg);
+    }
+
+    .success-callout svg {
+      flex-shrink: 0;
+      color: var(--color-trust-green);
+    }
+
+    .success-callout p {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-navy);
+      line-height: 1.5;
+    }
+
+    /* --- Thank You Hero --- */
+    .thankyou-hero {
+      padding: 48px 0 32px;
+      text-align: center;
+    }
+
+    .thankyou-hero h1 {
+      margin-bottom: 16px;
+    }
+
+    .thankyou-hero h2 {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* --- What Happens Next --- */
+    .next-steps {
+      max-width: 600px;
+      margin: var(--space-xl) auto 0;
+      text-align: left;
+    }
+
+    .next-steps h3 {
+      text-align: center;
+      margin-bottom: var(--space-md);
+    }
+
+    .next-steps-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .next-steps-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--color-slate);
+      margin-bottom: 14px;
+    }
+
+    .next-steps-list li .step-emoji {
+      flex-shrink: 0;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .next-steps-list li strong {
+      color: var(--color-navy);
+    }
+
+    /* --- Video Section --- */
+    .thankyou-video {
+      padding: 48px 0;
+    }
+
+    .thankyou-video .section-header {
+      text-align: center;
+      margin-bottom: var(--space-lg);
+    }
+
+    .thankyou-video .section-header h2 {
+      color: var(--color-navy);
+      font-weight: 700;
+    }
+
+    .thankyou-video .section-header p {
+      margin-top: 8px;
+    }
+
+    .video-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    .video-aspect {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+
+    .video-aspect iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* --- Testimonials --- */
+    .thankyou-testimonials {
+      padding: 48px 0;
+      background-color: var(--color-light-gray);
+    }
+
+    .thankyou-testimonials .section-header {
+      text-align: center;
+      margin-bottom: var(--space-lg);
+    }
+
+    .thankyou-testimonials .section-header h2 {
+      color: var(--color-navy);
+      font-weight: 700;
+    }
+
+    .thankyou-testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-sm);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* --- Footer minimal --- */
+    .footer-thankyou p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 11px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* --- Tablet --- */
+    @media (min-width: 768px) {
+      .thankyou-hero { padding: 60px 0 40px; }
+      .thankyou-video { padding: 60px 0; }
+      .thankyou-testimonials { padding: 60px 0; }
+
+      .thankyou-testimonials-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .success-callout p { font-size: 17px; }
+      .next-steps-list li { font-size: 17px; }
+    }
+
+    /* --- Desktop --- */
+    @media (min-width: 1024px) {
+      .thankyou-hero { padding: 80px 0 48px; }
+      .thankyou-video { padding: 80px 0; }
+      .thankyou-testimonials { padding: 80px 0; }
+
+      .thankyou-testimonials-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+      }
+
+      .success-callout p { font-size: 18px; }
+      .next-steps-list li { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <header class="thankyou-hero" role="banner">
+    <div class="container">
+      <div class="text-container">
+
+        <!-- Success Callout -->
+        <div class="success-callout anim-headline">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <p>Your Clarity Call is confirmed — check your email and WhatsApp for details.</p>
+        </div>
+
+        <h1 class="anim-headline">You're Booked! Here's What Happens Next</h1>
+        <h2 class="anim-subheadline">Your free 10-minute Visual Strain Clarity Call is locked in. While you wait, watch this short video so we can make the most of our time together.</h2>
+
+      </div>
+
+      <!-- Video Player -->
+      <div class="video-wrapper anim-cta" style="margin-top:var(--space-lg);">
+        <div class="video-aspect">
+          <!--
+            [PLACEHOLDER] Replace with your thank-you page video embed.
+            This could be a different video from the VSL — e.g. a short
+            "what to expect on your clarity call" explainer.
+
+            Vimeo:
+              <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="What to expect on your clarity call"></iframe>
+
+            YouTube:
+              <iframe src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="What to expect on your clarity call"></iframe>
+          -->
+          <iframe src="https://player.vimeo.com/video/PLACEHOLDER" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="What to expect on your clarity call"></iframe>
+        </div>
+      </div>
+
+      <div class="text-container">
+        <!-- What Happens Next -->
+        <div class="next-steps anim-body">
+          <h3>Before your call</h3>
+          <ul class="next-steps-list" role="list">
+            <li>
+              <span class="step-emoji" aria-hidden="true">📧</span>
+              <span><strong>Check your inbox</strong> — you'll find a confirmation email with your call date, time, and link.</span>
+            </li>
+            <li>
+              <span class="step-emoji" aria-hidden="true">📱</span>
+              <span><strong>WhatsApp reminder</strong> — we'll send you a reminder 24 hours before your call.</span>
+            </li>
+            <li>
+              <span class="step-emoji" aria-hidden="true">🎥</span>
+              <span><strong>Watch the video below</strong> — it'll help you get the most out of your clarity call.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================
+         TESTIMONIALS
+         ============================================ -->
+    <section class="thankyou-testimonials" aria-label="Patient testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>You're in Good Hands</h2>
+        </div>
+
+        <div class="thankyou-testimonials-grid">
+          <article class="testimonial-card">
+            <blockquote><p>"I wasn't sure if a 10-minute call would be useful, but it completely changed my understanding. They asked questions I'd never thought about and immediately identified a pattern."</p></blockquote>
+            <cite>— Chidi O., Product Designer, Lagos</cite>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote><p>"No pressure. No sales pitch. Just someone who actually listened and explained what might be happening. I appreciated the honesty."</p></blockquote>
+            <cite>— Amaka T., Software Developer, Lagos</cite>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote><p>"The clarity call was the turning point. I'd been ignoring my symptoms for months. In 10 minutes, I understood more than I had in years of self-diagnosing."</p></blockquote>
+            <cite>— Tunde R., Data Analyst, Lagos</cite>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote><p>"They didn't try to sell me anything I didn't need. Just honest recommendations. That's rare."</p></blockquote>
+            <cite>— Funmi R., Consultant, Lagos</cite>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote><p>"Best 10 minutes I've spent on my health this year. They asked smart questions, gave me clear answers, and I knew exactly what to do next."</p></blockquote>
+            <cite>— Femi A., Marketing Manager, Lagos</cite>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote><p>"I haven't had a work headache in three weeks. Three weeks. I didn't think that was possible."</p></blockquote>
+            <cite>— Ade K., Financial Planner, Lagos</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer footer-thankyou" role="contentinfo">
+    <div class="container">
+      <p>This training is educational and does not replace medical advice. For eye health concerns, consult a licensed optometrist or ophthalmologist.</p>
+      <p class="copyright">© 2025 Vantage Point Eye Clinic. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
